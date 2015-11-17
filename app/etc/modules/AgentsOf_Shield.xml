@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <AgentsOf_Shield>
+            <active>true</active>
+            <codePool>community</codePool>
+        </AgentsOf_Shield>
+    </modules>
+</config>

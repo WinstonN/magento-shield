@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <agentsof_shield module="agentsof_shield">
+            <label>Shield</label>
+            <tab>general</tab>
+            <sort_order>25</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label" module="agentsof_shield">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment></comment>
+                    <fields>
+                        <enable>
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+                        <header_name translate="label">
+                            <label>Header Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Name of the request header</comment>
+                        </header_name>
+                        <header_value translate="label">
+                            <label>Header Value</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Value of the request header</comment>
+                        </header_value>
+                        <enabled_for_area translate="label">
+                            <label>Enabled on which area of the site</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>agentsof_shield/source_area</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </enabled_for_area>
+                        <action translate="label">
+                            <label>What to do with invalid requests?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>agentsof_shield/source_action</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <can_be_empty>0</can_be_empty>
+                        </action>
+                        <redirect translate="label">
+                            <label>Where should invalid requests be redirected to?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>agentsof_shield/source_redirect</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <can_be_empty>0</can_be_empty>
+                            <depends><action>redirect</action></depends>
+                        </redirect>
+                        <redirect_url>
+                            <label>Custom Redirect URL</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends><redirect>custom_url</redirect></depends>
+                        </redirect_url>
+                    </fields>
+                </general>
+            </groups>
+        </agentsof_shield>
+    </sections>
+</config>
