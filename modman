@@ -1,0 +1,3 @@
+# AgentsOf_Shield modman file
+app/code/community/AgentsOf     app/code/community/AgentsOf
+app/etc/AgentsOf_Shield.xml     app/etc/modules/AgentsOf_Shield.xml
