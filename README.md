@@ -15,6 +15,11 @@ What can you do?
 
 This module listens to each request made to Magento Admin, Frontend or Both (configurable) and looks for a request header name (configurable via the admin) and the request header value (configurable) and if this matches, it allow the request through to Magento. If this fails it can either block the request (Send a 403) or redirect the request to a URL (configurable)
 
+# How to send the request header #
+
+Use a browser like chrome and the modheader extension, link below
+https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj?hl=en
+
 # TODO #
 
 Build a shell script that can enable or disable the shield
